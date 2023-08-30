@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Skin IT</title>
+    </head>
+    <body>
+    <header>
+        <div class="topnav">
+            <a class="active" href="index.html" target="_self"><b style="color: #e50914;">Skin</b> IT</a>
+            <div class="topnav-right">
+                <a href="cs.html" target="_self">CS:GO Skins</a>
+                <a href="rust.html" target="_self">Rust Skins</a>
+                <a href="#strt">Get Started</a>
+                <a href="#lng" style="height: fit-content;width: fit-content;background-color: #e50914;color: #fff;border-radius: 5px;">SELL YOUR SKINS</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <p class="p1">Sell CS:GO Skins</p>
+            <p class="p2">
+                <a class="ttlee" href="#lng" style="height: fit-content;
+                width: fit-content;
+                background-color: #e50914;
+                color: #fff;
+                border-radius: 5px;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;">SELL YOUR SKINS</a>
+            </p>
+        </div>
+        <div class="lng" id="lng">
+            <select id="label">
+                <option value="option0">Choose Category</option>
+                <option value="option2">Rifles</option>
+                <option value="option1">Heavy weapon</option>
+                <option value="option3">SMGs</option>
+
+            </select>
+            <div id="examples" style="display: none;">
+                <p id="option1-examples"><b style="text-align: center;"> MAG-7 </b>      <img class="wpn" style="max-width:25%; height:auto;" src="https://th.bing.com/th/id/R.d06345d9fb9c54d5a5fde589e03a056a?rik=bX9E1mdyYTR7aw&riu=http%3a%2f%2fvignette3.wikia.nocookie.net%2fcswikia%2fimages%2ff%2ffb%2fW_MAG-7_CSGO.png%2frevision%2flatest%3fcb%3d20140730235130&ehk=tlpWPTbpO%2fO1TqpV4u2bhVkKbSzmHOgZVipyqq%2fmDJQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+                    <b style="text-align: center;">Nova</b> <img class="wpn" style="max-width:25%; height:auto;" src="https://vignette.wikia.nocookie.net/csgo-wikia/images/2/20/Nova_2.jpg/revision/latest?cb=20190527113837&path-prefix=fr" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="text-align: center;">Negev <b><img class="wpn" style="max-width:25%; height:auto;" src="https://th.bing.com/th/id/R.b7c2c363f774ece65e68f86eb0fc3a7f?rik=uTDd%2fUvZ245vxg&riu=http%3a%2f%2fvignette3.wikia.nocookie.net%2fcswikia%2fimages%2f8%2f82%2fW_NEGEV_CSGI.png%2frevision%2flatest%3fcb%3d20140808202318&ehk=qNRRMVl622riNJ0Gj%2f0dv2JjmOKWi%2bM8TsRIG1Npb0k%3d&risl=&pid=ImgRaw&r=0" alt=""></p>
+                <p id="option2-examples"><b style="text-align: center;">AK-47</b>   <a href="save.html"> <img class="wpn" style="max-width:25%; height:auto;" src="https://vignette.wikia.nocookie.net/cswikia/images/0/0b/W_ak47_csgo.png/revision/latest?cb=20151031204808" alt=""> </a><b style="text-align: center;">AWP</b><img class="wpn" style="max-width:25%; height:auto;" src="https://th.bing.com/th/id/OIP.-gsxSKk5AYFW6nQUSDGbWgHaBl?pid=ImgDet&rs=1" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>FAMAS</b> <img style="max-width:20%; height:auto;" src="https://img.dsncdn.net/full/Fqz/52H/5aw.jpg" alt=""></p>
+                <p id="option3-examples"><b style="text-align: center;">MP9  </b>      <img class="wpn" style="max-width:25%; height:auto;" src="https://th.bing.com/th/id/R.5b9166cc05a123725421ff51aac801c5?rik=%2b5xLSvT2XOzz9w&pid=ImgRaw&r=0" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="text-align: center;">UMP-45</b><img class="wpn" style="max-width:25%; height:auto;" src="https://th.bing.com/th/id/R.552e482320ce20a4c931b9dc825f3a82?rik=86V1jPZPcGCJlg&pid=ImgRaw&r=0" alt=""></p>
+                
+            </div>
+        
+            <script>
+                var labelSelect = document.getElementById("label");
+                var examplesDiv = document.getElementById("examples");
+        
+                labelSelect.addEventListener("change", function() {
+                    var selectedOption = labelSelect.value;
+                    var examples = examplesDiv.getElementsByTagName("p");
+                    // hide all examples
+                    for (var i = 0; i < examples.length; i++) {
+                        examples[i].style.display ="none";
+                    }
+        
+                    // show examples for selected option
+                    var selectedExamples = document.getElementById(selectedOption + "-examples");
+                    selectedExamples.style.display = "block";
+                    examplesDiv.style.display = "block";
+
+                });
+            </script>
+        </div>
+    </main>
+    <footer>
+        <p align="left"><b style="color: #000;">Skin</b> IT</p>
+    </footer>
+
+    </body>
+</html>
